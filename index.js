@@ -9,3 +9,9 @@ function fuzzyMatch (drivers, letters) {
     return driver.slice(0, letters.length).toLowerCase() === letters.toLowerCase();
   })
 }
+
+function matchName (drivers, string) {
+  return drivers.filter(function(driver) {
+    return driver.name === driver.hometown;
+  }
+}
