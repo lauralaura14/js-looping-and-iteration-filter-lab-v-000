@@ -10,8 +10,8 @@ function fuzzyMatch (drivers, letters) {
   })
 }
 
-function matchName (drivers, string) {
+function matchName (drivers, name) {
   return drivers.filter(function(driver) {
-    return driver.string.toLowerCase() === string.toLowerCase();
+    return driver.name.toLowerCase() === name.toLowerCase();
   })
 }
