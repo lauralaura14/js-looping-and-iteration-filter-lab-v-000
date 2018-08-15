@@ -6,6 +6,6 @@ function findMatching (drivers, name) {
 
 function fuzzyMatch (drivers, letters) {
   return drivers.filter(function(driver) {
-    return driver.slice(0, letters.length).toLowerCase === letters.toLowerCase 
+    return driver.slice(0, letters.length).toLowerCase() === letters.toLowerCase();
   })
 }
